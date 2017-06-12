@@ -8,7 +8,7 @@
 #include"key.h"
 #include"dump.h"
 
-#define CHECK
+//#define CHECK
 
 const double EPSILON = 1e-6;
 

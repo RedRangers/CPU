@@ -13,11 +13,13 @@ int main()
 
     std::stack<double> Calc;
 
-    size_t n = 0;
-    std::cout << "Enter quantity of registers" << std::endl;
-    std::cin >> n;
+//    size_t n = 0;
+//    std::cout << "Enter quantity of registers" << std::endl;
+//    std::cin >> n;
 
-    std::vector<double> Registers( n );
+    std::vector<double> Registers( 3 );
+
+    std::cin >> Registers[ 2 ];
 
     CPU( Script, Calc, Registers );
 
