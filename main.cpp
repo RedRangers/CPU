@@ -23,8 +23,7 @@ int main()
 
     CPU( Script, Calc, Registers );
 
-    for( size_t i = 0; i < Registers.size(); ++i )
-        std::cout << Registers[ i ] << std::endl;
+    std::cout << Registers[ 1 ];
 
     return 0;
 }
