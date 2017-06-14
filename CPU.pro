@@ -10,7 +10,10 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    cpu.cpp \
+    rcode.cpp \
+    show.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -27,5 +30,4 @@ HEADERS += \
     key.h \
     rcode.h \
     cpu.h \
-    dump.h \
     show.h
