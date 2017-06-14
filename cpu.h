@@ -8,7 +8,7 @@
 #include"key.h"
 #include"dump.h"
 
-//#define CHECK
+#define CHECK
 
 const double EPSILON = 1e-6;
 
@@ -26,6 +26,15 @@ void CPU( std::vector<int>& code, std::stack<double>& Calc, std::vector<double>&
 
     while ( i < code.size() )
     {
+#ifdef CHECK
+        std::cout << "\ni:" << i ;
+        std::cout << "\nReg\n";
+        show_vector( Registers );
+
+        std::cout << "\nStack\n";
+        show_stack( Calc );
+        std::cin.get();
+#endif
         switch ( code[ i ] )
         {
             case CODE_END:
@@ -230,12 +239,17 @@ void CPU( std::vector<int>& code, std::stack<double>& Calc, std::vector<double>&
             default:
                 std::cout << "Command " << code[ i ] << " line " << i;
                 assert( !"Incorrect\n" );
-        }
-#ifdef CHECK
-    dump( Calc, Registers, code, i );
-    std::cin.get();
-#endif
 
+        }
+#ifdef CHECK 
+        std::cout << "\ni:" << i ;
+        std::cout << "\nReg\n";
+        show_vector( Registers );
+
+        std::cout << "\nStack\n";
+        show_stack( Calc );
+        std::cin.get();
+#endif
      }
 }
 #endif // CPU_H

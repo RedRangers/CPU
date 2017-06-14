@@ -25,7 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 HEADERS += \
     key.h \
-    showvector.h \
     rcode.h \
     cpu.h \
-    dump.h
+    dump.h \
+    show.h

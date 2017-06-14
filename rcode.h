@@ -4,8 +4,9 @@
 #include<vector>
 #include<fstream>
 #include<cassert>
+#include<cstdlib>
 
-#include"showvector.h"
+#include"show.h"
 
 #define CHECK
 #undef  CHECK

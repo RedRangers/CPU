@@ -2,7 +2,7 @@
 #define DUMP_H
 #include<stack>
 #include<vector>
-#include"showvector.h"
+#include"show.h"
 
 void dump( std::stack<double> Stack, std::vector<double> Reg, std::vector<int> Code, int i )
 {
